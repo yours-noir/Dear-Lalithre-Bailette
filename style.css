@@ -1,0 +1,39 @@
+/* ===== Warna kelopak (pink) ===== */
+.flower__leafs::after {
+  background-color: #f5347f !important;
+}
+
+.flower__leaf {
+  background-color: #f5347f !important;
+  background-image: linear-gradient(to top, #f99dbc, #f5347f) !important;
+}
+
+.flower__leaf--4 {
+  background-image: linear-gradient(to top, #f99dbc, #f5347f) !important;
+}
+
+/* ===== Teks maaf ===== */
+.message {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 460px;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  text-align: center;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 1.8s ease;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.75);
+  pointer-events: none;
+}
+
+body:not(.not-loaded) .message {
+  opacity: 1;
+}
